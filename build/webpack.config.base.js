@@ -11,19 +11,19 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'assets': utils.resolve('assets'),
-      'pages': utils.resolve('src/pages'),
+      'pages': utils.resolve('pages'),
       'static': utils.resolve('static'),
-      'components': utils.resolve('src/components')
+      'components': utils.resolve('components')
     }
   },
 
   module: {
     rules: [
-      {
+      /*{
         test: /\.(js|vue)$/,
         use: 'eslint-loader',
         enforce: 'pre'
-      }, {
+      },*/ {
         test: /\.vue$/,
         use: 'vue-loader'
       }, {
